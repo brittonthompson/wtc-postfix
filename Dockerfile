@@ -20,7 +20,7 @@ ADD mynetworks /etc/postfix/mynetworks
 ADD mailname /etc/mailname
 
 # Use syslog-ng to get Postfix logs
-#RUN apt-get install -q -y syslog-ng
+RUN apt-get install -q -y syslog-ng
 
 EXPOSE 25
 
