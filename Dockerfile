@@ -25,4 +25,4 @@ RUN apt-get install -q -y syslog-ng
 EXPOSE 25
 
 #service syslog-ng start ; 
-CMD ["sh", "-c", "service postfix start ; tail -F /var/log/mail.log"] 
+CMD ["sh", "-c", "service syslog-ng start ; service postfix start ; tail -F /var/log/mail.log"] 
